@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { nanoid } from 'nanoid';
 import css from './FeedbackOptions.module.css';
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
@@ -7,7 +9,7 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
     <div className={css.feedbackOptions}>
       <ul className={css.feedbackOptionslist}>
         {options.map((option, index) => (
-          <li key={index} className={css.feedbackOptionsListItem}>
+          <li key={nanoid()} className={css.feedbackOptionsListItem}>
             <button
               type="button"
               className={buttonColors[index]}
@@ -22,6 +24,11 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
       </ul>
     </div>
   );
+};
+
+FeedbackOptions.propTypes = {
+  options: PropTypes.array.isRequired,
+  onLeaveFeedback: PropTypes.func.isRequired,
 };
 
 export default FeedbackOptions;

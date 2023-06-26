@@ -1,3 +1,68 @@
 .statistics {
-    padding-top: 30px;
+    margin: 20px 0 20px;
+    animation: fadeInAnimation ease-in-out 0.9s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.statisticsTitle {
+    color: rgb(82, 51, 12);
+}
+
+.statisticsList {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.statisticsListItem {
+    padding: 2px 5px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    background-color: rgb(194, 180, 163);
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    animation: inputAnimation ease-in-out 0.9s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.statisticsPositiveFeedback {
+    margin-top: 20px;
+    color: rgb(82, 51, 12);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.statisticsPositiveFeedback>span {
+    color: #ffffff;
+    font-size: 26px;
+}
+
+@keyframes fadeInAnimation {
+    100% {
+        opacity: 1;
+        transform: scale(1.0);
+    }
+
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+}
+
+@keyframes inputAnimation {
+    100% {
+        opacity: 1;
+    }
+
+    0% {
+        opacity: 0;
+        box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.75);
+    }
 }

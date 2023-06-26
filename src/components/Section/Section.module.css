@@ -1,12 +1,20 @@
-.statisticsSection {
+.section {
     padding: 30px 0;
 }
 
 .container {
-    width: 768px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
     padding: 0 15px;
     margin: 0 auto;
     text-align: center;
-    border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
+    background-color: rgb(194, 180, 163);
+    box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.sectionTitle {
+    margin-top: 20px;
+    color: rgb(82, 51, 12);
 }

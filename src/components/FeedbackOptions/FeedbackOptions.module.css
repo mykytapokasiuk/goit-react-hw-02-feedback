@@ -1,5 +1,5 @@
 .feedbackOptions {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .feedbackOptionslist {
@@ -9,12 +9,12 @@
 }
 
 .feedbackBtn {
-    width: 150px;
-    padding: 8px;
+    width: 100px;
+    padding: 4px;
     color: black;
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 0.06em;
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
     text-transform: capitalize;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 3px;
