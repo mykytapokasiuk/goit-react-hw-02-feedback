@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { nanoid } from 'nanoid';
 import css from './Statistics.module.css';
 
 const handleProps = props => {
@@ -18,8 +17,8 @@ const Statistics = props => {
       <h2 className={css.statisticsTitle}>Statistics</h2>
       <ul className={css.statisticsList}>
         {normalizedProps.map(item => (
-          <li key={nanoid()} className={css.statisticsListItem}>
-            <span className={css.good}>
+          <li key={item.key} className={css.statisticsListItem}>
+            <span>
               {item.key}: {item.value}
             </span>
           </li>
